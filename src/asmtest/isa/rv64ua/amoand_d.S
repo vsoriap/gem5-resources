@@ -23,7 +23,7 @@ RVTEST_CODE_BEGIN
 
   TEST_CASE(3, a5, 0xffffffff80000000, ld a5, 0(a3))
 
-  # Try again clearing all bits except one
+  # try again after a cache miss
   TEST_CASE(4, a4, 0xffffffff80000000, \
     li  a1, 0x0000000080000000; \
     amoand.d a4, a1, 0(a3); \
