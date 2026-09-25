@@ -40,7 +40,6 @@ RVTEST_CODE_BEGIN
   )
 
   TEST_CASE(7, a5, 0x0000000000000001, lw a5, 0(a3))
-  #endif
 
   TEST_PASSFAIL
 
